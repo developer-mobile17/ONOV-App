@@ -1,0 +1,26 @@
+PODS:
+  - FlagPhoneNumber (0.8.0):
+    - FlagPhoneNumber/libPhoneNumberiOS (= 0.8.0)
+  - FlagPhoneNumber/libPhoneNumberiOS (0.8.0)
+  - iOSDropDown (0.3.4)
+  - IQKeyboardManagerSwift (6.5.6)
+
+DEPENDENCIES:
+  - FlagPhoneNumber
+  - iOSDropDown
+  - IQKeyboardManagerSwift
+
+SPEC REPOS:
+  trunk:
+    - FlagPhoneNumber
+    - iOSDropDown
+    - IQKeyboardManagerSwift
+
+SPEC CHECKSUMS:
+  FlagPhoneNumber: 3712455b95f66cb0f2016fef7d9e34cddf8c7f9a
+  iOSDropDown: c10a761f9a00c3f1cc9d3bce43ae504628e2f692
+  IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
+
+PODFILE CHECKSUM: 022addc9b4f7d51a24bf8bccc2ad2664d40ecb8e
+
+COCOAPODS: 1.10.1
