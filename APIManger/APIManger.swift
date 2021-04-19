@@ -382,6 +382,96 @@ class APIManger {
 
 
 
+    
+    
+    func callingGetHomeFeedAPI(HomeFeedParam:HomeFeedRequest, completionHandler: @escaping Handler) {
+
+        var headers: HTTPHeaders = [:]
+        headers = [
+            "X-API-KEY":"onovApp@onovapplication.com"
+
+        ]
+
+        AF.request(GetHomeFeedURL,
+                   method: .post,
+                   parameters: HomeFeedParam,
+                   encoder: URLEncodedFormParameterEncoder.default,
+                   headers: headers).response {
+                    response in
+
+                    switch response.result{
+                    case .success(let data):
+                        do {
+
+                            let jsonDecoder = JSONDecoder()
+                            let responseModel = try jsonDecoder.decode(HomeFeedResponse.self, from: data!)
+                            if response.response?.statusCode == 200{
+                                completionHandler(.success(responseModel))
+                                print("Success Get Home Feed")
+                            }
+                            else {
+                                // ProgressHUD.dismiss()
+                                print("There is an issue with GetHomeFeedURL API, Please check!")
+                            }
+
+                        } catch  {
+                            // ProgressHUD.dismiss()
+                            print(error.localizedDescription)
+                        }
+
+                    case .failure(let err):
+                        print(err.localizedDescription)
+                    }
+
+                   }
+    }
+
+
+
+    
+    func callingGetUserInfoAPI(GetUserInfoParam:GetUserInfoRequest, completionHandler: @escaping Handler) {
+
+        var headers: HTTPHeaders = [:]
+        headers = [
+            "X-API-KEY":"onovApp@onovapplication.com"
+
+        ]
+
+        AF.request(GetUserInfoURL,
+                   method: .post,
+                   parameters: GetUserInfoParam,
+                   encoder: URLEncodedFormParameterEncoder.default,
+                   headers: headers).response {
+                    response in
+
+                    switch response.result{
+                    case .success(let data):
+                        do {
+
+                            let jsonDecoder = JSONDecoder()
+                            let responseModel = try jsonDecoder.decode(GetUserInfoResponse.self, from: data!)
+                            if response.response?.statusCode == 200{
+                                completionHandler(.success(responseModel))
+                                print("Success GetUserInfoURL")
+                            }
+                            else {
+                                // ProgressHUD.dismiss()
+                                print("There is an issue with GetUserInfoURL API, Please check!")
+                            }
+
+                        } catch  {
+                            // ProgressHUD.dismiss()
+                            print(error.localizedDescription)
+                        }
+
+                    case .failure(let err):
+                        print(err.localizedDescription)
+                    }
+
+                   }
+    }
+
+
 
 
 }

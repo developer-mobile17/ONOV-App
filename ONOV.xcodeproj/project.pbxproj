@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		863653DA262D62F1004EFF88 /* HomeFeedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863653D9262D62F1004EFF88 /* HomeFeedModel.swift */; };
+		863653DE262D8539004EFF88 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 863653DD262D8539004EFF88 /* Kingfisher */; };
+		863653E1262D8FB5004EFF88 /* GetUserInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863653E0262D8FB5004EFF88 /* GetUserInfoModel.swift */; };
+		863653E4262D9DED004EFF88 /* ProfileFollowerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863653E3262D9DED004EFF88 /* ProfileFollowerVC.swift */; };
+		863653E7262D9E9D004EFF88 /* followerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863653E6262D9E9D004EFF88 /* followerCell.swift */; };
 		86FD70652625700A00F0ACE8 /* CreateEventVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FD70642625700A00F0ACE8 /* CreateEventVC.swift */; };
 		9E046820260089DB00ACB250 /* NotificationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E04681F260089DB00ACB250 /* NotificationModel.swift */; };
 		9E0468282600A39500ACB250 /* StatsModelResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0468272600A39500ACB250 /* StatsModelResponse.swift */; };
@@ -73,6 +78,10 @@
 
 /* Begin PBXFileReference section */
 		49ED521A64492E9956E53F86 /* Pods-ONOV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ONOV.debug.xcconfig"; path = "Target Support Files/Pods-ONOV/Pods-ONOV.debug.xcconfig"; sourceTree = "<group>"; };
+		863653D9262D62F1004EFF88 /* HomeFeedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFeedModel.swift; sourceTree = "<group>"; };
+		863653E0262D8FB5004EFF88 /* GetUserInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUserInfoModel.swift; sourceTree = "<group>"; };
+		863653E3262D9DED004EFF88 /* ProfileFollowerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileFollowerVC.swift; sourceTree = "<group>"; };
+		863653E6262D9E9D004EFF88 /* followerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = followerCell.swift; sourceTree = "<group>"; };
 		86FD70642625700A00F0ACE8 /* CreateEventVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEventVC.swift; sourceTree = "<group>"; };
 		9E04681F260089DB00ACB250 /* NotificationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationModel.swift; sourceTree = "<group>"; };
 		9E0468272600A39500ACB250 /* StatsModelResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsModelResponse.swift; sourceTree = "<group>"; };
@@ -143,6 +152,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				863653DE262D8539004EFF88 /* Kingfisher in Frameworks */,
 				FB3C6BBF340B2E17FF8A4EAA /* libPods-ONOV.a in Frameworks */,
 				9E3C3D0B25FF64A900790061 /* Alamofire in Frameworks */,
 				9ED026B1261C68E400900497 /* SwiftSignatureView in Frameworks */,
@@ -167,6 +177,17 @@
 				B01BC74AAFC68513B180EC46 /* Pods-ONOV.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		863653D7262D62D2004EFF88 /* HomeFeed */ = {
+			isa = PBXGroup;
+			children = (
+				9EA17B24261AE450007D219E /* HomeNewsFeedVC.swift */,
+				9ED0269A261C501000900497 /* HomeFeedTypeImage.swift */,
+				9ED0269D261C502300900497 /* HomeFeedTypeBoth.swift */,
+				863653D9262D62F1004EFF88 /* HomeFeedModel.swift */,
+			);
+			path = HomeFeed;
 			sourceTree = "<group>";
 		};
 		9E2E16D125F9E42D0065558A /* Login */ = {
@@ -248,6 +269,9 @@
 			isa = PBXGroup;
 			children = (
 				9ED7A10925F0BA80002D5E0A /* ProfileVC.swift */,
+				863653E0262D8FB5004EFF88 /* GetUserInfoModel.swift */,
+				863653E3262D9DED004EFF88 /* ProfileFollowerVC.swift */,
+				863653E6262D9E9D004EFF88 /* followerCell.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -389,9 +413,7 @@
 				9E2E16FA25FA26AB0065558A /* IntroductionVC.swift */,
 				9EFF390C260C5EBD00F02A10 /* VotingTab.swift */,
 				9ED051F7260C6E22005203C2 /* SearchAddFriendorFollowVC.swift */,
-				9EA17B24261AE450007D219E /* HomeNewsFeedVC.swift */,
-				9ED0269A261C501000900497 /* HomeFeedTypeImage.swift */,
-				9ED0269D261C502300900497 /* HomeFeedTypeBoth.swift */,
+				863653D7262D62D2004EFF88 /* HomeFeed */,
 				9EC97D76261D873B003DA871 /* NewLawVC.swift */,
 				9EC97D7F261D9C12003DA871 /* ViewUploadedPdfVC.swift */,
 				9E68DF73261EE25A00F66B46 /* EventListingVC.swift */,
@@ -435,6 +457,7 @@
 			packageProductDependencies = (
 				9E3C3D0A25FF64A900790061 /* Alamofire */,
 				9ED026B0261C68E400900497 /* SwiftSignatureView */,
+				863653DD262D8539004EFF88 /* Kingfisher */,
 			);
 			productName = ONOV;
 			productReference = 9EEC3C2825E4F28B005C89CC /* ONOV.app */;
@@ -466,6 +489,7 @@
 			packageReferences = (
 				9E3C3D0925FF64A900790061 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				9ED026AF261C68E400900497 /* XCRemoteSwiftPackageReference "SwiftSignatureView" */,
+				863653DC262D8539004EFF88 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 9EEC3C2925E4F28B005C89CC /* Products */;
 			projectDirPath = "";
@@ -562,8 +586,10 @@
 				9E8F908A25E8CB64008FAE2A /* HomeVC.swift in Sources */,
 				9ED0269E261C502300900497 /* HomeFeedTypeBoth.swift in Sources */,
 				9E046820260089DB00ACB250 /* NotificationModel.swift in Sources */,
+				863653DA262D62F1004EFF88 /* HomeFeedModel.swift in Sources */,
 				9ED051F8260C6E22005203C2 /* SearchAddFriendorFollowVC.swift in Sources */,
 				9E2669C426201D5A00F02D44 /* EventListingDetailsVC.swift in Sources */,
+				863653E4262D9DED004EFF88 /* ProfileFollowerVC.swift in Sources */,
 				9E0468342600CB5500ACB250 /* DebateRequestDetailVC.swift in Sources */,
 				9EA61DAF25F0EBAD009D504B /* AllWinnerCell.swift in Sources */,
 				9EC97D77261D873B003DA871 /* NewLawVC.swift in Sources */,
@@ -580,6 +606,8 @@
 				9ED7A10D25F0BC3E002D5E0A /* DonationVC.swift in Sources */,
 				9EEC3C2C25E4F28B005C89CC /* AppDelegate.swift in Sources */,
 				9ED0269B261C501000900497 /* HomeFeedTypeImage.swift in Sources */,
+				863653E1262D8FB5004EFF88 /* GetUserInfoModel.swift in Sources */,
+				863653E7262D9E9D004EFF88 /* followerCell.swift in Sources */,
 				9ED051FE260C98F2005203C2 /* PetitionListVC.swift in Sources */,
 				9E8F908D25E8D79D008FAE2A /* HomeCell.swift in Sources */,
 				9EC97D80261D9C12003DA871 /* ViewUploadedPdfVC.swift in Sources */,
@@ -739,8 +767,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 29C5FGJZU4;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ONOV/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -749,8 +778,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ONOV;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -760,8 +790,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 29C5FGJZU4;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ONOV/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -770,8 +801,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ONOV;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -799,6 +831,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		863653DC262D8539004EFF88 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.2.1;
+			};
+		};
 		9E3C3D0925FF64A900790061 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
@@ -818,6 +858,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		863653DD262D8539004EFF88 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 863653DC262D8539004EFF88 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
 		9E3C3D0A25FF64A900790061 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 9E3C3D0925FF64A900790061 /* XCRemoteSwiftPackageReference "Alamofire" */;

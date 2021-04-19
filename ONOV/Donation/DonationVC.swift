@@ -9,13 +9,28 @@ import UIKit
 
 class DonationVC: UIViewController {
 
+    @IBOutlet weak var objSegment: UISegmentedControl!
+    @IBOutlet weak var lblAmountFrom: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        objSegment.setTitle("Sent ($300)", forSegmentAt: 0)
     }
     @IBAction func actionBack(_ sender: Any){
         self.navigationController?.popViewController(animated: true)
     }
 
+    @IBAction func actionSegmentClicked(_ sender: Any) {
+        switch objSegment.selectedSegmentIndex {
+        case 0:
+            lblAmountFrom.text = "Sent From"
+        case 1:
+            lblAmountFrom.text = "Received From"
+        default:
+            break
+            
+        }
+    }
 }
 
 extension DonationVC:UITableViewDataSource,UITableViewDelegate {
