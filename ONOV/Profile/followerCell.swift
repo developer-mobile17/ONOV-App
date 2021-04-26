@@ -8,6 +8,10 @@
 import UIKit
 
 class followerCell: UITableViewCell {
+    @IBOutlet var imgUserProfile: UIImageView!
+    @IBOutlet var lblUserName: UILabel!
+    @IBOutlet var btnRemove: UIButton!
+    @IBOutlet var btnUnfollow:UIButton!
 
     override func awakeFromNib() {
         super.awakeFromNib()

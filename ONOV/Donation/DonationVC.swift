@@ -40,6 +40,7 @@ extension DonationVC:UITableViewDataSource,UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cellDonation = tableView.dequeueReusableCell(withIdentifier: "DonationCell", for: indexPath) as! DonationCell
+       
         return cellDonation
     }
 

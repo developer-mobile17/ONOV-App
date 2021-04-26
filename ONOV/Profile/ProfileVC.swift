@@ -43,13 +43,34 @@ class ProfileVC: UIViewController {
             return
         }
 
+        vcProfile.checkType = "Followers"
         let navController = UINavigationController(rootViewController: vcProfile)
         present(navController, animated: true)
     }
     @IBAction func actionFollowingClicked(_ sender: Any) {
+        
+        guard let vcProfile = storyboard?.instantiateViewController(identifier: "ProfileFollowerVC") as? ProfileFollowerVC else{
+
+            return
+        }
+
+        vcProfile.checkType = "Following"
+        let navController = UINavigationController(rootViewController: vcProfile)
+        present(navController, animated: true)
     }
+    
     @IBAction func actionDonorClicked(_ sender: Any) {
+        
+        guard let vcProfile = storyboard?.instantiateViewController(identifier: "ProfileFollowerVC") as? ProfileFollowerVC else{
+
+            return
+        }
+
+        vcProfile.checkType = "Donars"
+        let navController = UINavigationController(rootViewController: vcProfile)
+        present(navController, animated: true)
     }
+    
 }
 
 extension ProfileVC {
@@ -83,11 +104,6 @@ extension ProfileVC {
                     if let donorCount = userInfo?.donationsVisible {
                         self.btnDonors .setTitle("\(donorCount) \("Donors")" , for: .normal)
                     }
-                    
-                    
-                    
-                    
-            
                 }
                 case.failure(let err):
                 print(err.localizedDescription)

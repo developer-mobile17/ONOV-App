@@ -1,16 +1,18 @@
 //
-//  HomeFeedTypeBoth.swift
+//  NewsFeedTypeImgeWithTextCell.swift
 //  ONOV
 //
-//  Created by anil kumar on 06/04/21.
+//  Created by wbmb on 22/04/21.
 //
 
 import UIKit
 
-class HomeFeedTypeBoth: UITableViewCell {
-
+class NewsFeedTypeImgeWithTextCell: UITableViewCell {
+    
+    
     @IBOutlet var userImg: UIImageView!
     @IBOutlet var userName: UILabel!
+    @IBOutlet var lblPostTitle: UILabel!
     @IBOutlet var postDataTime: UILabel!
     @IBOutlet var txtData: UILabel!
     @IBOutlet var imgData: UIImageView!
@@ -25,5 +27,5 @@ class HomeFeedTypeBoth: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
+    
 }

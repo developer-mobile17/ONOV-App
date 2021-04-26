@@ -7,7 +7,7 @@
 
 import Foundation
 struct HomeFeedRequest:Encodable {
-    let userId:String
+    let userRef:String
 }
 
 

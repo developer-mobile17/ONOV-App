@@ -1,19 +1,20 @@
 //
-//  HomeFeedTypeImage.swift
+//  NewsFeedTypeText.swift
 //  ONOV
 //
-//  Created by anil kumar on 06/04/21.
+//  Created by wbmb on 22/04/21.
 //
 
 import UIKit
 
-class HomeFeedTypeImage: UITableViewCell {
-
+class NewsFeedTypeText: UITableViewCell {
+    
     @IBOutlet var userImg: UIImageView!
     @IBOutlet var userName: UILabel!
+    @IBOutlet var lblPostTitle: UILabel!
+    
     @IBOutlet var postDataTime: UILabel!
-  //  @IBOutlet var txtData: UILabel!
-    @IBOutlet var imgData: UIImageView!
+    @IBOutlet var txtData: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -25,5 +26,5 @@ class HomeFeedTypeImage: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
+    
 }
